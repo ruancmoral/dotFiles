@@ -1,0 +1,1 @@
+rofi -e "ALARME AGENDADO PRA AGORA"
