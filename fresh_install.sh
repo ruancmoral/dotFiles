@@ -4,8 +4,9 @@ sudo apt-get install -y curl feh vim i3 gimp arandr pavucontrol vlc htop kazam a
 
 #fix nauitulus to i3 
 gsettings set org.gnome.desktop.background show-desktop-icons false
-pip install pandas matplotlib seaborn pygame scikit-learn --user
-pip3 install jupyter --user
+
+#pip install pandas matplotlib seaborn pygame scikit-learn --user
+#pip3 install jupyter --user
 
 
 #spotify
@@ -15,3 +16,10 @@ echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sou
 
 sudo apt-get update && sudo apt-get install spotify-client
  
+
+#playerctl to music control (https://askubuntu.com/questions/1080671/how-can-i-install-playerctl)
+wget http://ftp.nl.debian.org/debian/pool/main/p/playerctl/libplayerctl2_2.0.1-1_amd64.deb
+wget http://ftp.nl.debian.org/debian/pool/main/p/playerctl/playerctl_2.0.1-1_amd64.deb
+sudo dpkg -i libplayerctl2_2.0.1-1_amd64.deb playerctl_2.0.1-1_amd64.deb
+
+
